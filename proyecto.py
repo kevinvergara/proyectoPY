@@ -2,7 +2,7 @@
 
 import csv
 
-with open('archivo.csv') as csvfile:
+with open('pima-indians-diabetes.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     #print(readCSV)
     
