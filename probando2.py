@@ -20,3 +20,30 @@ from sklearn.metrics import accuracy_score
 
 adult_df = pd.read_csv('prueba.csv',
                        header = None, delimiter=' *, *', engine='python')
+
+#agregar los nombres de las caracteristicas
+adult_df.columns = ['movieid','userid','rating',
+                    'gender','age','occupation','zipcode',
+                    'namewords','namepar','year','action',
+                    'adventure','animation','childrens',
+                    'comedy','crime','documentary','drama',
+                    'fantasy','filmnoir','horror','musical',
+                    'mystery','romance',
+                    'scifi','thriller','war','western']
+
+adult_df_rev = adult_df
+
+#estadisticas de los datos
+#print(adult_df_rev.describe(include= 'all'))
+
+for value in ['movieid','userid','rating',
+              'gender','age','occupation','zipcode',
+              'namewords','namepar','year','action',
+              'adventure','animation','childrens',
+              'comedy','crime','documentary','drama',
+              'fantasy','filmnoir','horror','musical',
+              'mystery','romance',
+              'scifi','thriller','war','western']:
+    adult_df_rev[value].replace(['?'], [adult_df_rev.describe(include='all')[value][2]],
+                                inplace='True')
+print(adult_df_rev)
