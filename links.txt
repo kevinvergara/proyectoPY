@@ -1,0 +1,7 @@
+http://www.becomingadatascientist.com/learningclub/thread-130.html
+
+https://github.com/paix120/DataScienceLearningClubActivities/blob/master/Activity05/Mushroom%20Edibility%20Classification%20-%20Naive%20Bayes.ipynb
+
+http://stackoverflow.com/questions/30364255/difference-between-using-train-test-split-and-cross-val-score-in-sklearn-cross-v
+
+https://www.dropbox.com/s/8v4lomociw1xz0d/data_so.csv?dl=0
