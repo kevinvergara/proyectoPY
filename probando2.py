@@ -153,7 +153,7 @@ target = adult_df_rev.values[:,27]
 features_train, features_test, target_train, target_test = train_test_split(features,
                                                                             target, test_size = 0.33, random_state = 10)
 x_scalar = StandardScaler()
-features_train = x_scalar.fit_transform(features_train)
+features_train = x_scalar.transform(features_train)
 target_test = x_scalar.transform(features_test)
 
 
